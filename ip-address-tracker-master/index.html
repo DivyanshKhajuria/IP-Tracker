@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>IP Address Tracker</h1>
+      <div id="ipFormContainer">
+        <form id="ipForm">
+          <input type="text" id="ipInput" placeholder="Enter an IP address" />
+          <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+        </form>
+      </div>
+      <div id="cardsContainer">
+        <div class="card">
+          <h2>IP Address</h2>
+          <p id="ipAddress"></p>
+        </div>
+        <div class="line"></div>
+        <div class="card">
+          <h2>Location</h2>
+          <p id="location"></p>
+        </div>
+        <div class="line"></div>
+        <div class="card">
+          <h2>ISP</h2>
+          <p id="isp"></p>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script><br>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/DivyanshKhajuria">Divyansh Khajuria</a>.
+        </div>
+      </footer>
+      <br><br>
+    
+</html>

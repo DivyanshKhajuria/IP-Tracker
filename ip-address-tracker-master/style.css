@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+#ipFormContainer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#ipForm {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.container {
+    background: url(./images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ipInput {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    height: 60px;
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.line {
+    width: 1px;
+    height: 60px;
+    background-color: #ccc;
+}
+
+.attribution {
+    margin-left: 500px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    padding: 8px 16px;
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cardsContainer {
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 15px;
+    width: 800px;
+    position: relative;
+    top: 65px;
+    box-shadow: 4px 4px 8px black;
+}
+
+.card {
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: small;
+}
+
+.card p {
+    font-size: larger;
+}
+
+#map {
+    height: 600px;
+}
+
+@media screen and (max-width: 479px) {
+    #cardsContainer {
+        z-index: 999;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+        margin-bottom: 20px;
+        background: white;
+        border-radius: 15px;
+        width: 400px;
+        position: relative;
+        top: 65px;
+        box-shadow: 4px 4px 8px black;
+    }
+    .line {
+        display: none;
+    }
+    .card h2 {
+        font-size: small;
+    }
+    .card p {
+        font-size: larger;
+    }
+}
